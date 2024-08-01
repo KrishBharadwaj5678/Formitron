@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/delete.css">
+    <title>Edit Form</title>
+    <style>
+    
+        h2.main_head{
+            font-size: 2.8vw;
+        }
+        
+        @media (300px <= width <= 600px){
+            h2.main_head{
+                font-size: 7.8vw;
+            }
+        }
+    
+        @media (600px <= width <= 1200px){
+            h2.main_head{
+                font-size: 5.3vw;
+            }
+        }
+        </style>
+</head>
+<body>
+
+    <div class="back">
+        <a href="/show">Back To Page</a>
+    </div>
+
+    <h2 class="main_head">Edit Form</h2>
+
+    <div class="container mt-4 test">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="/edit/<%= data._id %>" method="POST">
+                    
+                    <div class="form-floating mb-3">
+                        <input name="Name" type="text" class="form-control" id="name" value=<%= data.FirstName %> >
+                        <label for="name" style="color:black;">Name</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Last Name" name="LastName" required value=<%= data.LastName %>>
+                        <label for="name" style="color:black;">Last Name</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Email Address" required name="Email" value=<%= data.Email %>>
+                        <label for="email" style="color:black;">Email Address</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="url" class="form-control" id="url" placeholder="Email image url" required name="Image" value=<%= data.Image %>>
+                        <label for="url" style="color:black;">Image Url</label>
+                    </div>
+               
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="url" required name="DOB" value=<%= data.DOB %>>
+                        <label for="url" style="color:black;">DOB</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <select id="state" class="form-select" required name="State">
+                            
+                            <option value="Andhra Pradesh" <%= data.State=='Andhra Pradesh'?'selected':'' %>>Andhra Pradesh</option>
+
+                            <option value="Arunachal Pradesh" <%= data.State=='Arunachal Pradesh'?'selected':'' %>>Arunachal Pradesh</option>
+
+                            <option value="Assam" <%= data.State=='Assam'?'selected':'' %>>Assam</option>
+
+                            <option value="Bihar" <%= data.State=='Bihar'?'selected':'' %>>Bihar</option>
+
+                            <option value="Chhattisgarh" <%= data.State=='Chhattisgarh'?'selected':'' %>>Chhattisgarh</option>
+
+                            <option value="Goa" <%= data.State=='Goa'?'selected':'' %>>Goa</option>
+
+                            <option value="Gujarat" <%= data.State=='Gujarat'?'selected':'' %>>Gujarat</option>
+
+                            <option value="Haryana" <%= data.State=='Haryana'?'selected':'' %>>Haryana</option>
+
+                            <option value="Himachal Pradesh" <%= data.State=='Himachal Pradesh'?'selected':'' %>>Himachal Pradesh</option>
+
+                            <option value="Jharkhand" <%= data.State=='Jharkhand'?'selected':'' %>>Jharkhand</option>
+
+                            <option value="Karnataka" <%= data.State=='Karnataka'?'selected':'' %>>Karnataka</option>
+
+                            <option value="Kerala" <%= data.State=='Kerala'?'selected':'' %>>Kerala</option>
+
+                            <option value="Madhya Pradesh" <%= data.State=='Madhya Pradesh'?'selected':'' %>>Madhya Pradesh</option>
+
+                            <option value="Maharashtra" <%= data.State=='Maharashtra'?'selected':'' %>>Maharashtra</option>
+
+                            <option value="Manipur" <%= data.State=='Manipur'?'selected':'' %>>Manipur</option>
+
+                            <option value="Meghalaya" <%= data.State=='Meghalaya'?'selected':'' %>>Meghalaya</option>
+
+                            <option value="Mizoram" <%= data.State=='Mizoram'?'selected':'' %>>Mizoram</option>
+
+                            <option value="Nagaland" <%= data.State=='Nagaland'?'selected':'' %>>Nagaland</option>
+                            
+                            <option value="Odisha" 
+                            <%= data.State=='Odisha'?'selected':'' %>>Odisha</option>
+
+                            <option value="Punjab" <%= data.State=='Punjab'?'selected':'' %>>Punjab</option>
+
+                            <option value="Rajasthan" <%= data.State=='Rajasthan'?'selected':'' %>>Rajasthan</option>
+
+                            <option value="Sikkim" <%= data.State=='Sikkim'?'selected':'' %>>Sikkim</option>
+
+                            <option value="Tamil Nadu" <%= data.State=='Tamil Nadu'?'selected':'' %>>Tamil Nadu</option>
+
+                            <option value="Telangana" <%= data.State=='Telangana'?'selected':'' %>>Telangana</option>
+
+                            <option value="Tripura" <%= data.State=='Tripura'?'selected':'' %>>Tripura</option>
+
+                            <option value="Uttar Pradesh" <%= data.State=='Uttar Pradesh'?'selected':'' %>>Uttar Pradesh</option>
+
+                            <option value="Uttarakhand" <%= data.State=='Uttarakhand'?'selected':'' %>>Uttarakhand</option>
+
+                            <option value="West Bengal" <%= data.State=='West Bengal'?'selected':'' %>>West Bengal</option>
+
+                        </select>
+                        <label for="url" style="color:black;">Select State</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                       <select class="form-select" aria-label="Default select example" name="Gender">
+                        <option value="Male" <%= data.Gender=='Male'?'selected':'' %> >Male</option>
+                        <option value="Female" <%= data.Gender=='Female'?'selected':'' %>>Female</option>
+
+                        <option value="Other" <%= data.Gender=='Other'?'selected':'' %>>Other</option>
+                      </select>
+                      <label for="url" style="color:black;">Gender</label>
+                    </div>
+
+                    <input type="submit" class="btn btn-primary" value="Submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

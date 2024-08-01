@@ -1,0 +1,42 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #212121;
+    font-family: sans-serif;
+
+}
+
+h2.main_head{
+    margin: 2vw 0vw 0vw 0vw;
+    text-align: center;
+    color: white;
+}
+
+@media (300px <= width <= 600px){
+    h2.main_head{
+        font-size: 7.2vw;
+        margin: 8vw 0vw 0vw 0vw;
+    }
+
+    div.test{
+        padding: 0vw 8vw;
+    }
+}
+
+@media (540px <= width <= 600px){
+    h2.main_head{
+        font-size: 6.5vw;
+    }
+}
+
+@media (600px <= width <= 1200px){
+    h2.main_head{
+        margin: 8vw 0vw 0vw 0vw;
+    }
+}

@@ -1,0 +1,41 @@
+div.back{
+    margin: 3vw 0vw 0vw 3vw;
+    font-size: 2.1vw;
+}
+
+div.back a{
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+h3.message{
+    text-align: center;
+    color: white;
+    margin: 3vw 0vw;
+    font-size: 2.5vw;
+    color: lightgreen;
+}
+
+@media (300px <= width <= 1200px){
+
+    div.back{
+        margin: 6vw 0vw 0vw 6vw;
+        font-size: 5.3vw;
+    }
+    
+    h3.message{
+        margin: 6vw 0vw;
+        font-size: 6vw;
+        font-weight: 100;
+    }
+}
+
+@media (600px <= width <= 1200px){
+    div.back{
+        font-size: 4.4vw;
+    }
+
+    h3.message{
+        font-size: 5.2vw;
+    }
+}

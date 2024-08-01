@@ -1,0 +1,141 @@
+div.details-parent{
+    margin: 2vw 0vw 0vw 0vw;
+    padding: 0vw 2vw 0vw 2vw;
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.box{
+    width: 16vw;
+    height: 23.5vw;
+    border: 1px solid gray;
+    border-radius: 0.3vw;
+    padding: 0.8vw;
+}
+
+div.image-container{
+    overflow: hidden;
+    border-radius: 0.3vw;
+}
+
+img{
+    width: 18vw;
+    height: 13vw;
+    object-fit: cover;
+}
+
+p.info{
+    color:white;
+    margin: 1.2vw 0vw 0vw 0vw;
+    font-size: 1.4vw;
+    line-height: 1.4vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p.info2{
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0.8;
+    font-size: 1.3vw;
+    text-overflow: ellipsis;
+}
+
+div.btns{
+    display: flex;
+    margin: 1vw 0vw 0vw 0vw;
+    gap: 1vw;
+    justify-content: space-evenly;
+}
+
+button.edit,button.delete{
+    width: 5.5vw;
+    outline: none;
+    border: none;
+    height: 2.6vw;
+    color:white;
+    border-radius: 0.3vw;
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+
+button.edit{
+    background:#4A90E2;
+}
+
+button.delete{
+    background: #F44336;
+}
+
+h3.form-submitted{
+    text-align: center;
+    font-size: 1.9vw;
+    color:lightgreen;
+}
+
+h2.main_head{
+    font-size: 2.8vw;
+}
+
+@media (300px <= width <= 1200px){
+
+    h2.main_head{
+        font-size: 5.4vw;
+        margin: 8vw 0vw 0vw 0vw;
+    }
+
+    div.details-parent{
+        margin: 5vw 0vw 0vw 0vw;
+        gap: 3vw;
+    }
+
+    div.box{
+        width: 34vw;
+        height: auto;
+        border-radius: 0.8vw;
+        padding: 1.4vw;
+    }
+    
+    div.image-container{
+        border-radius: 1.1vw;
+        margin: 0vw 0vw 3vw 0vw;
+    }
+    
+    img{
+        width: 34vw;
+        height: 26vw;
+    }
+
+    p.info{
+        font-size: 3.5vw;
+        line-height: 3vw;
+    }
+
+    p.info2{
+        font-size: 3.4vw;
+        margin: 2vw 0vw 0vw 0vw;
+    }
+
+    div.btns{
+        margin: 2.5vw 0vw 0vw 0vw;
+        gap: 2vw;
+    }
+
+    button.edit,button.delete{
+        width: 13vw;
+        height: 6.8vw;
+        font-size: 3.58vw;
+    }   
+
+    h2.main_head{
+        font-size: 6.8vw;
+    }
+
+    h3.form-submitted{
+        font-size: 5.7vw;
+    }
+   
+}
