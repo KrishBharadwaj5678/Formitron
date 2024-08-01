@@ -93,41 +93,41 @@ h2.main_head{
     }
 
     div.box{
-        width: 34vw;
+        width: 38vw;
         height: auto;
         border-radius: 0.8vw;
-        padding: 1.4vw;
+        padding: 2.2vw;
     }
     
     div.image-container{
-        border-radius: 1.1vw;
+        border-radius: 0.4vw;
         margin: 0vw 0vw 3vw 0vw;
     }
     
     img{
-        width: 34vw;
-        height: 26vw;
+        width: 38vw;
+        height: 32vw;
     }
 
     p.info{
-        font-size: 3.5vw;
-        line-height: 3vw;
+        font-size: 3.8vw;
+        line-height: 4vw;
     }
 
     p.info2{
-        font-size: 3.4vw;
-        margin: 2vw 0vw 0vw 0vw;
+        font-size: 3.7vw;
+        margin: 3vw 0vw 0vw 0vw;
     }
 
     div.btns{
-        margin: 2.5vw 0vw 0vw 0vw;
+        margin: 3vw 0vw 0vw 0vw;
         gap: 2vw;
     }
 
     button.edit,button.delete{
-        width: 13vw;
+        width: 14vw;
         height: 6.8vw;
-        font-size: 3.58vw;
+        font-size: 3.7vw;
     }   
 
     h2.main_head{
@@ -138,4 +138,52 @@ h2.main_head{
         font-size: 5.7vw;
     }
    
+}
+
+@media (300px <= width <= 600px){
+
+    div.details-parent{
+        gap: 6vw;
+    }
+
+    div.box{
+        width: 70vw;
+        height: auto;
+        padding: 4vw;
+    }
+    
+    div.image-container{
+        border-radius: 0.7vw;
+        margin: 0vw 0vw 4vw 0vw;
+    }
+    
+    img{
+        width: 70vw;
+        height: 50vw;
+    }
+
+    p.info{
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+
+    p.info2{
+        font-size: 5.2vw;
+        margin: 2.2vw 0vw 0vw 0vw;
+    }
+
+    div.btns{
+        margin: 4vw 0vw 0vw 0vw;
+        gap: 2vw;
+    }
+
+    button.edit,button.delete{
+        width: 21vw;
+        height: 9.4vw;
+        font-size: 5vw;
+    }   
+
+    h2.main_head{
+        font-size: 7vw;
+    }
 }
